@@ -74,6 +74,82 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-list {
+  padding-left: 0;
+  list-style: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+}
+
+.participant-email {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.delete-participant {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: #b42318;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.delete-participant-icon {
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+  mask: url("trash-2.svg") center / contain no-repeat;
+}
+
+.delete-participant:hover {
+  color: #912018;
+  background-color: #fee4e2;
+  border-color: #fecdca;
+}
+
+.delete-participant:focus-visible {
+  outline: 2px solid #b42318;
+  outline-offset: 2px;
+}
+
+.delete-participant:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.participants-section .participants-empty {
+  margin-bottom: 0;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
